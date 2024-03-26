@@ -12,6 +12,7 @@ body {
   font-family: "Bellefair", serif;
   color: white;
   background: #0b0d17;
+  overflow-x: hidden;
 }
 
 .font-barlow {
