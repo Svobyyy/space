@@ -17,7 +17,9 @@ export default function Hamburger() {
         height={21}
         quality={100}
         alt="hamburger"
-        className="md:hidden inline-block cursor-pointer"
+        className={`md:hidden inline-block cursor-pointer transition-opacity ${
+          menu ? "opacity-0" : "opacity-100"
+        }`}
         onClick={() => {
           setMenu(true);
         }}

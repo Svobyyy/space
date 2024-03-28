@@ -1,8 +1,5 @@
 import Image from "next/image";
 import logo from "@/public/shared/logo.svg";
-import backgroundPc from "@/public/home/background-home-desktop.jpg";
-import backgroundTablet from "@/public/home/background-home-tablet.jpg";
-import backgroundMobile from "@/public/home/background-home-mobile.jpg";
 import NavLink from "./NavLink";
 import Link from "next/link";
 import Hamburger from "./Hamburger";
@@ -14,13 +11,6 @@ export default function Nav() {
         <Image src={logo} width={48} height={48} quality={100} alt="logo" />
       </Link>
 
-      <Image
-        src={backgroundPc}
-        fill
-        quality={100}
-        alt="logo"
-        className="z-[-1] object-cover"
-      />
       <div className="w-full h-[1px] color-white bg-white opacity-25 ml-[64px] translate-x-16 z-10 hidden lg:inline-block" />
       <nav
         className="

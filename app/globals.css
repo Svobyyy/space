@@ -28,31 +28,31 @@ body {
 }
 
 .heading-1 {
-  @apply text-[150px] font-bellefair text-white;
+  @apply lg:text-[150px] text-[80px] font-bellefair;
 }
 
 .heading-2 {
-  @apply text-[100px] font-bellefair text-white;
+  @apply text-[100px] font-bellefair;
 }
 
 .heading-3 {
-  @apply text-[56px] font-bellefair text-white;
+  @apply text-[56px] font-bellefair;
 }
 
 .heading-4 {
-  @apply text-[32px] font-bellefair text-white;
+  @apply text-[32px] font-bellefair;
 }
 
 .heading-5 {
-  @apply text-[28px] font-barlowCondensed text-white tracking-[4.75px];
+  @apply font-barlowCondensed lg:text-[28px] md:text-[20px] text-[16px] lg:tracking-[4.75px] md:tracking-[3.38px] tracking-[2.7px];
 }
 
 .subheading-1 {
-  @apply text-[28px] font-bellefair text-white;
+  @apply text-[28px] font-bellefair;
 }
 
 .subheading-2 {
-  @apply text-[14px] font-bellefair text-white tracking-[2.35px];
+  @apply text-[14px] font-bellefair tracking-[2.35px];
 }
 
 .nav-text {
@@ -60,5 +60,5 @@ body {
 }
 
 .body-text {
-  @apply font-barlow text-white text-[18px];
+  @apply font-barlow lg:text-[18px] md:text-[16px] text-[15px] max-w-[444px];
 }
