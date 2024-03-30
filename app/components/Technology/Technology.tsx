@@ -28,7 +28,7 @@ export default function Technology() {
       <div
         className="
         flex max-w-[1275px] w-full justify-between items-center lg:mt-[64px] md:mt-[60px] mt-[32px]
-        lg:flex-row-reverse flex-col gap-5"
+        lg:flex-row-reverse flex-col gap-5  mb-5" 
       >
         <Image
           src={`${portrait}`}
