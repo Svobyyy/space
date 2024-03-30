@@ -27,7 +27,7 @@ export default function Crew() {
 
       <div
         className="
-        flex max-w-[1110px] w-full justify-between items-center lg:mt-[64px] md:mt-[60px] mt-[32px]
+        flex max-w-[1110px] w-full justify-between lg:items-start items-center lg:mt-[64px] md:mt-[60px] mt-[32px]
         lg:flex-row-reverse md:flex-col-reverse flex-col"
       >
         <img
