@@ -36,7 +36,7 @@ body {
 }
 
 .heading-3 {
-  @apply text-[56px] font-bellefair;
+  @apply lg:text-[56px] md:text-[40px] text-[24px] font-bellefair;
 }
 
 .heading-4 {

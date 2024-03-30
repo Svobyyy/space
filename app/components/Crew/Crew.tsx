@@ -1,6 +1,5 @@
 "use client";
 import { crew } from "@/app/constants/constants";
-import Image from "next/image";
 import { useState } from "react";
 import Options from "./Options/Options";
 
