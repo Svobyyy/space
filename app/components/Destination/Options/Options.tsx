@@ -2,15 +2,7 @@ import { Destination } from "@/app/constants/constants";
 import { Dispatch, SetStateAction } from "react";
 
 type Props = {
-  destinations: Array<{
-    name: string;
-    images: {
-      webp: string;
-    };
-    description: string;
-    distance: string;
-    travel: string;
-  }>;
+  destinations: Array<Destination>;
   setD: Dispatch<SetStateAction<number>>;
   d: number;
 };
@@ -20,6 +12,7 @@ export default function Options({ destinations, setD, d }: Props) {
     <ul
       className="
       nav-text lg:mb-[20px] md:mb-[32px] mb-[20px] flex gap-[26px] lg:text-start lg:justify-start justify-center lg:mt-0 md:mt-[53px] mt-[26px]
+      flex-wrap  
       "
     >
       {destinations instanceof Array &&

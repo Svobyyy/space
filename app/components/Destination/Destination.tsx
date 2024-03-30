@@ -7,6 +7,14 @@ import Options from "./Options/Options";
 export default function Destination() {
   const [d, setD] = useState(0);
 
+  const {
+    images: { webp },
+    name,
+    description,
+    distance,
+    travel,
+  } = destinations[d];
+
   return (
     <section
       className="
@@ -27,18 +35,19 @@ export default function Destination() {
         <Image
           width={445}
           height={445}
-          src={`${destinations[d].images.webp}`}
-          alt={`${destinations[d].name}`}
+          quality={100}
+          src={`${webp}`}
+          alt={`${name}`}
           className="lg:w-[445px] lg:h-[445px] md:w-[300px] md:h-[300px] w-[170px] h-[170px]"
         />
 
         <div>
           <Options destinations={destinations} setD={setD} d={d} />
           <h2 className="heading-2 lg:text-start text-center">
-            {destinations[d].name.toUpperCase()}
+            {name.toUpperCase()}
           </h2>
           <p className="text-[#D0D6F9] body-text md:mb-[54px] mb-[32px] lg:text-start text-center lg:max-w-[444px] md:max-w-[573px]">
-            {destinations[d].description}
+            {description}
           </p>
 
           <div
@@ -49,16 +58,12 @@ export default function Destination() {
           >
             <div className="flex flex-col gap-3">
               <h6 className="subheading-2 text-[#D0D6F9]">AVG. DISTANCE</h6>
-              <p className="subheading-1">
-                {destinations[d].distance.toUpperCase()}
-              </p>
+              <p className="subheading-1">{distance.toUpperCase()}</p>
             </div>
 
             <div className="flex flex-col gap-3">
               <h6 className="subheading-2 text-[#D0D6F9]">EST. TRAVEL TIME</h6>
-              <p className="subheading-1">
-                {destinations[d].travel.toUpperCase()}
-              </p>
+              <p className="subheading-1">{travel.toUpperCase()}</p>
             </div>
           </div>
         </div>
