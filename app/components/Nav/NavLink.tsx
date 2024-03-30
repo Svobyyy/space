@@ -12,7 +12,6 @@ type props = {
 export default function NavLink({ href, span }: props) {
   const pathname = usePathname();
   const hrefNavigation = href === "home" ? "/" : href;
-  console.log(pathname, hrefNavigation);
   return (
     <Link
       href={hrefNavigation}
