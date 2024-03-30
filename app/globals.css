@@ -32,7 +32,7 @@ body {
 }
 
 .heading-2 {
-  @apply text-[100px] font-bellefair;
+  @apply lg:text-[100px] md:text-[80px] text-[56px] font-bellefair;
 }
 
 .heading-3 {
@@ -56,9 +56,9 @@ body {
 }
 
 .nav-text {
-  @apply font-barlowCondensed text-[16px] tracking-[2.7px];
+  @apply font-barlowCondensed lg:text-[16px] text-[14px]  tracking-[2.7px];
 }
 
 .body-text {
-  @apply font-barlow lg:text-[18px] md:text-[16px] text-[15px] max-w-[444px];
+  @apply font-barlow lg:text-[18px] md:text-[16px] text-[15px] max-w-[444px] lg:leading-[32px] md:leading-[28px] leading-[25px] ;
 }

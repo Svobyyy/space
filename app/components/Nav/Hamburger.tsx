@@ -27,7 +27,7 @@ export default function Hamburger() {
 
       <div
         className={`
-        absolute w-[254px] h-full backdrop-blur-2xl z-10 bg-[#ffffff08]
+        fixed w-[254px] h-full backdrop-blur-2xl z-10 bg-[#ffffff08]
         right-0 top-0 transition-transform
         ${menu ? "translate-x-0" : "translate-x-full"}
         inline-block md:hidden

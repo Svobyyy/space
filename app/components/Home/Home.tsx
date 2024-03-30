@@ -4,7 +4,7 @@ export default function Home() {
       <div
         className="
       w-full flex max-w-[1110px] lg:justify-between lg:items-end lg:mt-[251px] md:mt-[106px] mt-12 lg:flex-row flex-col
-      items-center text-center justify-center lg:gap-0 md:gap-[156px] gap-[81px]
+      items-center lg:text-start text-center justify-center lg:gap-0 md:gap-[156px] gap-[81px]
       "
       >
         <div className="lg:inline-block flex flex-col items-center">
@@ -25,7 +25,9 @@ export default function Home() {
       lg:w-[274px] lg:h-[274px] md:w-[242px] md:h-[242px] w-[150px] h-[150px]
       md:text-[32px] text-[20px] md:tracking-[2px] tracking-[1.5px]
     bg-white rounded-full text-black justify-center items-center flex
-      relative before:w-[450px] before:h-[450px] before:absolute before:bg-[#979797] before:z-[-1]
+      relative before:absolute before:bg-[#979797] before:z-[-1]
+      lg:before:w-[450px] lg:before:h-[450px] md:before:w-[320px] md:before:h-[320px]
+      before:w-[250px] before:h-[250px]
       before:rounded-full before:transition-all before:opacity-0 hover:before:opacity-100
       before:scale-0 hover:before:scale-100 cursor-pointer
       "

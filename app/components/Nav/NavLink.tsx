@@ -12,6 +12,7 @@ type props = {
 export default function NavLink({ href, span }: props) {
   const pathname = usePathname();
   const hrefNavigation = href === "home" ? "/" : href;
+  console.log(pathname, hrefNavigation);
   return (
     <Link
       href={hrefNavigation}
@@ -20,11 +21,14 @@ export default function NavLink({ href, span }: props) {
        before:bg-white before:bottom-0 before:hover:opacity-50
          before:transition-all before:h-full before:w-1 before:right-0
         ${
-          pathname == hrefNavigation ? "before:opacity-100" : "before:opacity-0"
+          pathname === `/${hrefNavigation !== "/" ? hrefNavigation : ""}`
+            ? "before:opacity-100"
+            : "before:opacity-0"
         }
        `}
     >
-      <span className="font-bold lg:inline-block md:hidden inline-block">{`${span}`}</span> {`${href.toUpperCase()}`}
+      <span className="font-bold lg:inline-block md:hidden inline-block">{`${span}`}</span>{" "}
+      {`${href.toUpperCase()}`}
     </Link>
   );
 }
